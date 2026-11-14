@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Daily Planner",
+        "description": "Installer Daily Planner. Ajoutez ensuite une carte « Daily Planner » à un tableau de bord pour créer vos programmes."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Daily Planner est déjà configuré."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Daily Planner",
+        "description": "Install Daily Planner. Then add a \"Daily Planner\" card to a dashboard to create your schedules."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Daily Planner is already configured."
+    }
+  }
+}
