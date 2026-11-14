@@ -1,7 +1,7 @@
 """Constants for Daily Planner."""
 
 DOMAIN = "daily_planner"
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 
 STORAGE_KEY = f"{DOMAIN}.schedules"
 STORAGE_VERSION = 1

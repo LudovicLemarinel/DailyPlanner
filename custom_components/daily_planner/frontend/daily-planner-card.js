@@ -2,7 +2,7 @@
  * Daily Planner card for Home Assistant.
  * Served by the daily_planner integration — no build step, no dependency.
  */
-const CARD_VERSION = "0.1.0";
+const CARD_VERSION = "0.1.1";
 
 const I18N = {
   fr: {
@@ -561,6 +561,8 @@ const STYLE = `
 /* ========================================================================== */
 class DailyPlannerCardEditor extends HTMLElement {
   setConfig(config) {
+    // HA echoes back every config we emit: re-rendering then would steal focus.
+    if (this._config && JSON.stringify(config) === JSON.stringify(this._config)) return;
     this._config = { ...config };
     this._render();
   }
